@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learn · 学习索引</title>
+  <meta name="description" content="Java / Python / Web / 网络安全 学习体系索引与可复用规则" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="eyebrow">Learn Repository</p>
+      <h1>学习索引</h1>
+      <p class="lead">
+        面向研发的学习知识库：网络安全、Java、Python、Web。
+        命名按阅读顺序 <code>A01-模块</code> · 规则可复用。
+      </p>
+      <nav class="quick-nav" aria-label="快速导航">
+        <a href="#rules">规则</a>
+        <a href="#tracks">学习线</a>
+        <a href="#path">路径</a>
+        <a href="#tree">结构</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="rules" class="panel">
+      <h2>可复用规则</h2>
+      <div class="grid cards">
+        <article class="card">
+          <h3>命名</h3>
+          <p><code>字母+两位数字</code>，字母=模块章节，数字=阅读顺序。示例 <code>A01-Test</code>、细节 <code>A01-01-子标题.md</code>。</p>
+        </article>
+        <article class="card">
+          <h3>大纲</h3>
+          <p>每条学习线入口为 <code>A00-学习大纲.md</code>，先大纲后细节。</p>
+        </article>
+        <article class="card">
+          <h3>记忆</h3>
+          <p>操作与对话写入 <code>memory/YYMMDD/Wxx.md</code>，按月文件夹、周文件归档。</p>
+        </article>
+        <article class="card">
+          <h3>职责</h3>
+          <p><code>doc/</code>或模块夹放知识 · <code>project/</code>放交付 · <code>memory/</code>放记忆。三类不混放。</p>
+        </article>
+        <article class="card">
+          <h3>单篇结构</h3>
+          <p>学习目标 → 知识点 → 动手练习 / 关联经验 → 自测。</p>
+        </article>
+        <article class="card">
+          <h3>纪律</h3>
+          <p>不提交密钥/真实目标；安全练习仅限靶场与授权环境。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="tracks" class="panel">
+      <h2>学习线</h2>
+      <div class="grid tracks" id="trackList"></div>
+    </section>
+
+    <section id="path" class="panel">
+      <h2>推荐路径（前端 2 年背景）</h2>
+      <ol class="path">
+        <li><strong>Web 基本功</strong>：html → css → js</li>
+        <li><strong>工程能力</strong>：node</li>
+        <li><strong>自动化与脚本</strong>：python</li>
+        <li><strong>安全体系</strong>：cybersecurity</li>
+        <li><strong>企业后端</strong>：java</li>
+      </ol>
+    </section>
+
+    <section id="tree" class="panel">
+      <h2>仓库结构</h2>
+      <pre class="tree" id="treeText"></pre>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>规则全文见 <a href="./index.md">index.md</a> · 各线入口为对应 <code>A00-学习大纲.md</code></p>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
