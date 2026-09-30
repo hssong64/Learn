@@ -1,0 +1,438 @@
+# =========================
+# Learn · 通用 .gitignore
+# 覆盖常用语言 / 工具 / 系统 / IDE
+# =========================
+
+# ---------- OS ----------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ---------- IDE / 编辑器 ----------
+.idea/
+.vscode/
+*.code-workspace
+.history/
+.project
+.classpath
+.settings/
+*.iml
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+# VS Code（保留协作配置时可改）
+# .vscode/*
+# !.vscode/extensions.json
+# !.vscode/settings.example.json
+
+# ---------- 通用密钥 / 环境 ----------
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+credentials.json
+secrets.json
+service-account*.json
+*.keystore
+
+# ---------- Node.js / 前端 / TypeScript ----------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.yarn/cache
+.yarn/install-state.gz
+.pnp.*
+.pnpm-store/
+dist/
+build/
+out/
+.next/
+.nuxt/
+.svelte-kit/
+.turbo/
+.vercel/
+.netlify/
+.angular/
+coverage/
+coverage/**
+*.tsbuildinfo
+.nyc_output/
+.cache/
+.vite/
+.eslintcache
+.stylelintcache
+*.local
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.venv/
+venv/
+ENV/
+env/
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytype/
+.dmypy.json
+dmypy.json
+poetry.lock
+# 如需提交 Poetry.lock 可注释上一行
+
+# ---------- Java / JVM / Maven / Gradle / Scala / Kotlin ----------
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+**/build/
+!src/**/build/
+.classpath
+.project
+.settings/
+bin/
+out/
+*.hprof
+metals.sbt
+.bloop/
+.metals/
+.bsp/
+project/metals.sbt
+project/project/
+project/target/
+*.log
+
+# ---------- C / C++ / Objective-C ----------
+*.o
+*.lo
+*.la
+*.al
+*.libs
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+*.d
+*.obj
+*.sbr
+*.suo
+*.ilk
+*.pdb
+*.idb
+*.ncb
+*.aps
+*.pch
+*.ipdb
+*.iobj
+*.exp
+*.idc
+*.lib
+*.log
+CMakeCache.txt
+CMakeFiles/
+cmake-build-*/
+compile_commands.json
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+_deps/
+build/
+Debug/
+Release/
+x64/
+x86/
+ipch/
+.vs/
+
+# ---------- Go ----------
+bin/
+pkg/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+go.work.sum
+vendor/
+# 如需提交 vendor/ 可注释上一行
+coverage.out
+coverage.html
+
+# ---------- Rust ----------
+target/
+**/*.rs.bk
+Cargo.lock
+# 如需提交可执行项目的 Cargo.lock 可注释上一行
+*.pdb
+
+# ---------- .NET / C# ----------
+*.user
+*.userosscache
+*.sln.docstates
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+artifacts/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+packages/
+!packages/build/
+*.nuget.props
+*.nuget.targets
+*.vs/
+.vs/
+TestResults/
+[Tt]est[Rr]esult*/
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+*.pidb
+*.svclog
+*.scc
+
+# ---------- PHP ----------
+vendor/
+composer.phar
+composer.lock
+.phpunit.result.cache
+.php-cs-fixer.cache
+.phpstan.cache
+auth.json
+.env
+# 如需提交依赖可注释 vendor/ 与 composer.lock
+
+# ---------- Ruby ----------
+*.gem
+/.config/
+/coverage/
+/InstalledFiles
+/pkg/
+/spec/reports/
+/spec/examples.txt
+/test/tmp/
+/test/version_tmp/
+/tmp/
+/vendor/bundle/
+.bundle/
+.rspec_status
+*.rbc
+/yardoc/
+/doc/
+/public/assets/
+public/assets/
+.ruby-version
+.ruby-gemset
+Gemfile.lock
+# 如需提交可注释 Gemfile.lock
+
+# ---------- Swift / iOS / Xcode ----------
+.DS_Store
+.build/
+xcuserdata/
+DerivedData/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xccheckout
+*.xcscmblueprint
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+timeline.xctimeline
+playground.xcworkspace
+.swiftpm/
+Packages/
+Package.pins
+Package.resolved
+*.xcuserstate
+
+# ---------- Kotlin / Android ----------
+.gradle/
+build/
+local.properties
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+captures/
+.externalNativeBuild/
+*.class
+*.log
+*.hprof
+.idea/
+*.iml
+.kotlin/
+
+# ---------- 移动端杂项 ----------
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# ---------- 数据 / 媒体 / 二进制（学习笔记目录常用） ----------
+# 若学习资料中刻意提交二进制，可按需取消注释
+# *.pdf
+# *.docx
+# *.xlsx
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+*.iso
+*.img
+*.dmg
+*.sqlite
+*.db
+*.db-journal
+*.sql
+*.sql.gz
+# 例外：刻意提交的示例 SQL 可用 !**/samples/*.sql
+!**/samples/*.sql
+
+# ---------- 日志 / 临时 ----------
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+*.swp
+*.swo
+nohup.out
+core
+core.*
+
+# ---------- 安全学习相关 ----------
+# 靶场/工具误提交的 shell 与凭据（谨慎）
+*.msfvenom
+*.msfvenom.*
+shell.*
+webshell.*
+*.war.xml
+# 本地笔记中可能含内网地址时建议：
+# **/internal-notes/**
+# **/lab-notes/**  # 若 lab-notes 不进库
+
+# ---------- Markdown / 文档工具 ----------
+# 如用 mkdocs/docusaurus 等，常见产出目录：
+site/
+docs/_build/
+.jekyll-cache/
+.jekyll-metadata
+_book/
+_cache/
+*.epub
+*.mobi
+# 注意：本仓库 cybersecurity/doc/** 学习笔记是源文件，不要忽略
+
+# ---------- 数据科学 / Jupyter ----------
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+mlruns/
+mlruns/**
+runs/
+wandb/
+lightning_logs/
+
+# ---------- 其他常见工具 ----------
+*.pid
+*.seed
+*.pid.lock
+.pids/
+.serverless/
+.aws-sam/
+.terraform/
+*.tfstate
+*.tfstate.*
+.terragrunt-cache/
+*.tfvars
+*.tfvars.json
+# 如需提交 tfvars 可注释
+.DS_Store
+
+# ---------- 规则说明 ----------
+# 1. 此文件位于仓库根：Learn/.gitignore
+# 2. cryptography 等项目若需提交依赖锁文件（package-lock.json / go.sum 等），请在对应段注释掉忽略行
+# 3. 学习笔记与 doc/ 目录为源内容，勿整体 ignore
